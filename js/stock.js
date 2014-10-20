@@ -40,13 +40,23 @@ Stock.prototype.getData = function(query) {
 	jQuery.ajax({
 		url : query,
 		success : function(data) {
+			if( !data.query.results ) {
+				_this.error( 'Unable to find the stock symbol "' + _this.symbol +'".' );
+				return false;
+			}
+
 			_this.template( data.query.results );
 		}
 	});
 }
 
 Stock.prototype.render = function( template ) {
-	jQuery( this.elem ).html( template );
+	jQuery( this.elem ).html( template ).removeClass('stock-loader');
+}
+
+Stock.prototype.error = function( msg ) {
+	var err = '<div class="alert alert-error">' + msg + '</div>';
+	this.render( err );
 }
 
 Stock.prototype.template = function( results ) {

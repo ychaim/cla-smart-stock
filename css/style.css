@@ -1,6 +1,13 @@
 .stock-ticker {
 	display: inline-block;
 	width: 220px;
+	min-height: 84px;
+}
+
+.stock-loader {
+	/*background: #f00;*/
+	border: 1px solid #ddd;
+	background: url('/images/default/icons/loading.gif') no-repeat center;
 }
 
 .stock-ticker a {

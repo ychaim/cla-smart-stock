@@ -25,7 +25,9 @@ Copy the following html into your page.
 
 	<script src="/intranet/components/smart-stock/js/stock.js"></script>
 	<script>
-	new Stock("#stock", "JP:7867", "Tomy Co Ltd");
+	new Stock("#stockGoog", "GOOG", "Google");
+	new Stock("#stockAppl", "AAPL", "Apple ");
 	</script>
 
-	<div id="stock" class="stock-ticker"></div>
+	<div id="stockGoog" class="stock-ticker"></div>
+	<div id="stockAppl" class="stock-ticker"></div>
