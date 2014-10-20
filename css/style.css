@@ -1,0 +1,51 @@
+.stock-ticker {
+	display: inline-block;
+	width: 220px;
+}
+
+.stock-ticker a {
+	display: block;
+	border: 1px solid #ddd;
+	padding: 10px;
+	color: #555;
+}
+
+.stock-ticker a:hover {
+	border-color: #ccc;
+	color: #000;
+	background-color: #f8f8f8;
+}
+
+.stock-name {
+	text-transform: uppercase;
+}
+
+.stock-direction {
+	float: left;
+	font-size: 24px;
+	width: 30px;
+	color: #3AB161;
+	line-height: 40px;
+}
+
+.stock-val {
+	font-size: 36px;
+	line-height: 42px;
+	margin-left: 30px;
+	margin-right: 5	0px;
+}
+
+.stock-amount {
+	color: #3AB161;
+	float: right;
+	font-weight: bold;
+	width: 50px;
+}
+
+.stock-amount + .stock-amount {
+	clear: right;
+}
+
+.decrease {
+	color: #DC514D;
+}
