@@ -2,6 +2,8 @@
 
 Smart component that uses YQL to query MSN.com Money.
 
+[![](https://raw.github.com/Claromentis/cla-smart-stock/master/screenshot.png)](https://raw.github.com/Claromentis/cla-smart-stock/master/screenshot.png)
+
 Initialise a new js object and pass in the following required values:
 
 # Parameters
