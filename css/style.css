@@ -31,7 +31,6 @@
 	float: left;
 	font-size: 24px;
 	width: 30px;
-	color: #3AB161;
 	line-height: 40px;
 }
 
@@ -43,7 +42,6 @@
 }
 
 .stock-amount {
-	color: #3AB161;
 	float: right;
 	font-weight: bold;
 	width: 50px;
@@ -55,4 +53,8 @@
 
 .decrease {
 	color: #DC514D;
+}
+
+.increase {
+	color: #3AB161;
 }
